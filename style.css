@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+/* Navigation Menu Style */
+.nav-main {
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 99, 71, 0.527);
+}
+
+.nav-main,
+.nav-bar ul li a {
+  color: var(--font-color);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+  margin-left: 15px;
+  line-height: 80px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+}
+
+.nav-main:hover,
+.nav-bar ul li a:hover {
+  color: #333;
+}
+/*MAin Button Style  */
+.btn {
+  outline: none;
+  border: none;
+  padding: 15px 28px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+  background-color: #15bee4d3;
+  transition: transform 240ms linear;
+  transform-origin: center center;
+  /* margin-top: 20px; */
+}
+.btn:hover {
+  transform: scaleX(1.1);
+  letter-spacing: 1.1px;
+  background-color: #15bee4;
+}
+
+.mainform {
+  width: 70vw;
+  margin: auto;
+  margin-top: 25px;
+}
+/* Book Library Form Style */
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  outline: none;
+  height: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  margin: 6px;
+}
+.addBookbtn {
+  margin-top: 10px;
+}
+.booktype {
+  margin-top: 14px;
+  text-align: center;
+}
+#booktable {
+  margin-top: 29px;
+  width: 70vw;
+
+  table-layout: auto;
+}
+#booktable th,
+#booktable td {
+  border-bottom: 1.3px solid #333;
+  box-shadow: 0px 0px 7px 1px wheat;
+  padding: 10px 1px;
+}
+
+.message {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.message-Success {
+  background-color: greenyellow;
+}
+.message-Danger {
+  background-color: indianred;
+}

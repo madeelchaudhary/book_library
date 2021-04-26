@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Book Library Using JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body style="overflow-x: hidden; transition: all 500ms linear;">
+    <div class="nav-main">
+        <div class="logo">
+            <h5 style="cursor: pointer; font-size: 24px">Book Library</h5>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="messages" style="margin: 3px 20px;"></div>
+    <div class="mainform">
+        <h2 style="text-align: center;">Add Your Book</h2>
+        <form action="" id="bookForm">
+            <label for="bookTitle">Book Name:</label>
+            <input type="text" name="bookTitle" id="bookTitle" placeholder="Book Name">
+            <label for="bookAuthor">Book Name:</label>
+            <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Book Author">
+            <div class="booktype">
+                <input type="radio" name="bookType" id="Fiction" value="Fiction">
+                <label for="Fiction">Fiction</label>
+                <input type="radio" name="bookType" id="Computer" value="Computer">
+                <label for="Computer">Computer</label>
+                <input type="radio" name="bookType" id="Cooking" value="Cooking">
+                <label for="Cooking">Cooking</label>
+            </div>
+            <button class="btn addBookbtn">Add Book</button>
+        </form>
+        <div class="tableMain">
+            <table id="booktable">
+                <!-- <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Txccccccype</th>
+                    </tr>
+                </thead>
+                <tbody class="booktableBody">
+                </tbody> -->
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
